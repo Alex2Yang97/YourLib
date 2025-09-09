@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "yourlib"
+version = "0.1.0"
+description = "A tiny example library"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "alex yang" }]
+dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/yourlib"]
